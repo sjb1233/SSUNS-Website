@@ -1,0 +1,118 @@
+{% load crispy_forms_tags %}
+
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016 - Dashboard</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="#" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="/positionpaper/" class="navigation-link">Position Papers</a></li>
+							<li class="navigation-item"><a href="/DelegateInput/" class="navigation-link">Delegate Input</a></li>
+						</ul>
+						<a href="{% url "django.contrib.auth.views.logout" %}?next=/" class="pull-right buy-btn">Log Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">SSUNS Dashboard - Information</h5>
+			
+		</div>
+	</section>
+
+	<b style="position: relative; left: 30px;">{{error}}</b>
+	<p style="position: relative; left: 30px;"> Name of Institution: <span class="highlight">{{School}}</span></p>
+	<p style="position: relative; left: 30px;"> Faculty Advisor Name: <span class="highlight">{{FAName}}</span></p>
+	<p style="position: relative; left: 30px;"> Number of Delegates: <span class="highlight">{{NumDels}}</span></p>
+	<p style="position: relative; left: 30px;"> Payment Method: <span class="highlight">{{PaymentMethod}}</span></p>
+	<p style="position: relative; left: 30px;"> Paid: <span class="highlight">{{PaidInvoice}}</span></p>
+	<p style="position: relative; left: 30px;"> <b>Sign up form for Montreal Tours:</b> <span class="highlight"><u><a href="https://goo.gl/forms/3SdKFxmS3ocP8YZm1">CLICK HERE</a></u></span></p>
+	<p style="position: relative; left: 30px;"> <b>WestJet Web Coupon Code:</b> <span class="highlight">NCNHEGO</span></p>
+        <p style="position: relative; left: 30px;"> <b>WestJet *For Travel Agent Web use only Promo code*:</b> <span class="highlight">YUL02</span></p>
+        <p style="position: relative; left: 30px;"> <b>VIA Rail Promo Code:</b> <span class="highlight">13384</span></p>
+	<p style="position: relative; left: 30px;"> Position Papers: <span class="highlight">{{PositionPapers}}</span></p>
+	<p style="position: relative; left: 30px;"> Delgate Inputs(Delegates, FAC ADS): <span class="highlight"><br/>{{Inputs|safe}}</span></p>
+	<p style="position: relative; left: 30px;"> Country Assignments: <b>NOTE: Country and Character assignments are below. If you registered recently, these assignments will be available soon.</b> <br/> <center>{{CountryAssignmentString|safe}}</center></p>
+	<br/><br/>
+
+<!-- 	<section class="section align-center">
+	<div class="container">
+		<h5 class="heading-alt">Delegate Inputs</h5>
+		<p class="text-alt" style="margin-bottom: 0px;"> This section is to be done when the delegates have been assigned their committee and country. If you have more than 25 delegates, complete this form multiple times.
+		<br/>Please Input <span class="highlight">Delegate's Name - Country Assignment - Committee</span> </p>
+	</div>
+	</section>
+<div class="row">
+  <div class="col-md-8">
+    <form method='POST' action='' style="position: relative; left: 30px;">{% csrf_token %}
+      {{ form|crispy }}
+<br>
+<br>
+      <input class='btn btn-primary btn-lg' type='submit' value='Submit' />
+    </form>
+    </div>
+</div> -->
+</div>
+<br/>
+<br/>
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<!-- <script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script> -->
+</body>
+</html>

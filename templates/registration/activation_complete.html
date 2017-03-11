@@ -1,0 +1,28 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Account Activated" %}{% endblock %}
+
+{% block content %}
+    <section class="section align-center">
+        <div class="container">
+            <h5 class="heading-alt">{% trans "Registration Complete" %}</h5>
+            <p class="text-alt" style="margin-bottom: 0px;">
+    				{% trans "You can now log in." %}
+            </p>
+        <br/><br/>
+	<a href="/accounts/login/" class="btn btn-md">Login to Dashboard</a>
+
+	</div>
+    </section>
+
+{% endblock %}
+
+
+{% comment %}
+**registration/activation_complete.html**
+
+Used after successful account activation. This template has no context
+variables of its own, and should simply inform the user that their
+account is now active.
+{% endcomment %}

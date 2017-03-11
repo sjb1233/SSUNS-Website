@@ -1,0 +1,765 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016 - Crises</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" type='images/x-icon' href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" /> -->
+	<link rel="stylesheet" href="{% static 'parallax/style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+
+
+<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Crises</h5>
+		</div>
+	</section>
+
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="portfolio" class="portfolio portfolio-parallax clearfix">
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/Apollo.png' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal">Apollo 13</a></h3>
+							<span><font size="5">National Aeronautics and Space Administration</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/WW2.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal2">World War II</a></h3>
+							<span><font size="5">Britain</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/adhoc.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal3">Ad Hoc</a></h3>
+							<span><font size="5">Confidential</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+										<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/THT.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal4">The Handmaid's Tale</a></h3>
+							<span><font size="5">Literary</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/BB.png' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal5">The Crew</a></h3>
+							<span><font size="5">Queen Anne's Revenge</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/Salem.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal6">Salem Village</a></h3>
+							<span><font size="5">Massachusetts, 1692</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/3rd.png' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal7">Third Servile Revolt</a></h3>
+							<span><font size="5">Joint Crisis Committee</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/Scot.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal8">First Scottish War of Independence</a></h3>
+							<span><font size="5">Joint Crisis Committee</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+<!-- MODALS -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Apollo 13</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/Nasa Apollo 13.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">"Uhhh Houston... We have a problem." These famous words defined an era of human exploration, as man reached out further than it ever had and into the great unknown. The space race not only revolutionized American technology, but it also challenged the willpower and intelligence of every single person involved in each mission to space or the moon: from those in the operating room in Texas to the men aboard the rocket ships.</p>  
+								<p style="text-indent: 50px;">Delegates will be asked to think quickly and creatively in order to tackle problems in space and on earth. From tracking and steering Apollo 13’s trajectory to the moon, dealing with any on board anomalies the crew may face, and leaving their mark for future missions and generations, the crew and command center have a tremendous amount of responsibility.</p>
+
+
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Apo3.jpg' %}" alt="Zayd" class="img-responsive"></div>
+										<h3 class="name">Zayd Omar</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Apo2.jpg' %}" alt="Caroline" class="img-responsive"></div>
+										<h3 class="name">Caroline Wesley</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Apo1.jpg' %}" alt="Jeremy" class="img-responsive"></div>
+										<h3 class="name">Jeremy Ponak</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Apo4.jpg' %}" alt="Ryan" class="img-responsive"></div>
+										<h3 class="name">Ryan Ramos</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Britain - World War II</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/britainww2.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">Gentlemen, the world is at war.  Poland is burning, the victim of a new manner of warfare unleashed by the Germans and their allies.  Now Great Britain must stand at the ready, for our allies and our own interests are the targets of voracious enemies.  While Germany threatens our Continental interests, Italy and Japan lie in wait at the edges of the Empire, ready to take as much of it as possible.  
+								</p>
+								<p style="text-indent: 50px;">
+								In this committee the delegates will have to work together and lead Britain’s War Cabinet through hell on Earth, balancing the strains of winning the war and leading a global Empire.  However, through deft political action, economic planning, the use of propaganda, and the mobilization of millions of men, this nation will survive and overcome the challenges it faces.  The sirens beckon Gentlemen; will you answer their call? 
+								</p>
+
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/WW23.jpg' %}" alt="Name 1" class="img-responsive"></div>
+										<h3 class="name">Priya Dube</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper">
+										<img style="width:85%; height:85%" src="{% static 'parallax/Photos/WW22.png' %}" alt="Name 3" class="img-responsive"></div>
+										<h3 class="name">David Marchionni</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper">
+										<img src="{% static 'parallax/Photos/WW24.jpg' %}" alt="Name 3" class="img-responsive"></div>
+										<h3 class="name">Oscar Beghin</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 100"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Ad Hoc</h2>
+							</div>
+							<div class="modal-body">
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The <b>unexplainable</b> is the foundation of boundless silence. Perceptual reality shapes cosmic abstract beauty. Your consciousness transcends visible external reality. The world requires unbridled <em>truth</em>.
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<p style="text-indent: 50px;"><b>Classified</b>
+								</p>
+<!-- 								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 300px"><img src="{% static 'parallax/Pictures_temp/COP4.jpg' %}" alt="Manon Rouanet" class="img-responsive"></div>
+										<h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/COP2.jpg' %}" alt="Jad El Tal" class="img-responsive"></div>
+										<h3 class="name">Jad El Tal</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/COP3.jpg' %}" alt="Kieran Sharma" class="img-responsive"></div>
+										<h3 class="name">Kieran Sharma</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 425px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+
+									</div>
+								</div> -->
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">The  Handmaid’s  Tale</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/Literary Committee Handmaids Tale.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">This  crisis  committee  is  set  in  Gilead,  the  world  Margaret  Atwood  describes  in  her dystopian  novel The  Handmaid’s  Tale.  The  delegates  will  be  members  of  Mayday,  a secret  organization  seeking  to  overthrow  an  oppressive  government  and  re-establish  the world  that  they  knew.  While  all  Mayday  members  agree  that  Gilead  is  infinitely  worse than  anything  they  have  ever  known,  some  believe  the  Gileadan leaders  are  right,  to  a certain  extent:  there  was  something  wrong  with  the  previous  system.  In  this  committee, the  delegates  will  have  to  come  up  with  creative  solutions  to  deal  with  oppression  and fear, but also discover novel, concrete ways to move from dystopia to utopia. 
+								</p>
+								<p style="text-indent: 50px;">Note:  This  committee  is  based  on  a  book  that  contains  mature  and  sensitive  matters. Delegate discretion is advised.
+								</p>
+
+								<h3>Position Papers:</h3>
+								<p>To prepare for the committee, consider carefully and answer one of the following questions: </p>
+
+								<p style="text-indent: 50px;"><b>I.</b> Is the use of violence justifiable in the context of revolutions, and if so, to what extent and towards whom?</p>
+
+<p style="text-indent: 50px;"> <b>II.</b> Should great social and political change be instigated by elites and flow from top to bottom, or should it involve the masses overthrowing the top?</p>
+<p>
+Instead of submitting a conventional position paper, delegates are expected to submit their answer in one double-spaced page maximum.
+</p>
+
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 370px"><img src="{% static 'parallax/Pictures_temp/Lit1.jpg' %}" alt="Gretel" class="img-responsive"></div>
+										<h3 class="name">Gretel Kahn</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Lit2.jpg' %}" alt="Nicole" class="img-responsive"></div>
+										<h3 class="name">Nicole Widmer</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Lit4.jpg' %}" alt="Yasmine" class="img-responsive"></div>
+										<h3 class="name">Yasmine Kamen</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Lit3.jpg' %}" alt="Violette" class="img-responsive"></div>
+										<h3 class="name">Violette Yu</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+										<br/><br/><br/>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">The Crew of the Queen Anne's Revenge</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/Queen Annes Revenge.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The Golden Age of Piracy dawns, infamous Captain Benjamin Hornigold captures the French merchant ship 'La Concorde' and hands it over to his first mate Edward Teach as he retires. Commanding three-hundred scallywags, buccaneers, and sailors - Teach becomes better known across the Caribbean as the merciless Captain Blackbeard. Embark on this ruthless journey of plunder and piracy at a turning point in the geopolitics of the new world and the high seas.
+								</p>
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/QueenC.jpg' %}" alt="Name 1" class="img-responsive"></div>
+										<h3 class="name">Katie Gillis</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Queen3.jpg' %}" alt="Name 1" class="img-responsive"></div>
+										<h3 class="name">Margaux Levisalles</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Queen1.jpg' %}" alt="Name 1" class="img-responsive"></div>
+										<h3 class="name">Phil April</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Queen2.png' %}" alt="Name 2" class="img-responsive"></div>
+										<h3 class="name">Arthur Corbel</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Salem Village, 1692</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/Salem Village 1962.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">Welcome to Massachusetts Bay Colony, 1692. Threats from the French Acadians in the North and local Native Americans are abound, but something dark and strange is brewing in Massachusetts. The community leaders of Salem, Andover, and Ipswich have been summoned by the colonial governor's council. As delegates you must simultaneously defend the colony and figure out what's happening...before something "wicked this way comes."
+								</p>
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Salem2.jpg' %}" alt="Mark LeBeau" class="img-responsive"></div>
+										<h3 class="name">Mark LeBeau</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Salem4.jpg' %}" alt="Samuel Ferrer" class="img-responsive"></div>
+										<h3 class="name">Samuel Ferrer</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 237px"><img src="{% static 'parallax/Photos/Salem1.jpg' %}" alt="Mackenzie Anderson" class="img-responsive"></div>
+										<h3 class="name">Mackenzie Anderson</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Salem3.jpg' %}" alt="Ray Blasen" class="img-responsive"></div>
+										<h3 class="name">Ray Blasen</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Third Servile Revolt - Joint Crisis</h2>
+							</div>
+							<div class="modal-body">
+
+							<div class="col-sm-6">
+							<center><a href="{% static 'BG/Rebel.pdf' %}" class="btn btn-lg">Background Guide - Rebel</a></center>
+							</div>
+
+							<div class="col-sm-6">
+							<center><a href="{% static 'BG/Roman.pdf' %}" class="btn btn-lg">Background Guide - Romans</a></center>
+							<br/>
+							</div>
+
+
+								<h3>Rebel Description:</h3>
+								<p style="text-indent: 50px;">
+A vast schism has formed on the Italian peninsula.The year is 73 BC and the rebellion is growing. The army, once a mere 78-men strong, has now increased to over 120,000 escaped slaves and gladiators fighting for freedom against the Roman Republic. After decades of oppression, the tensions are as high as the stakes. Fighting to end of the institution of slavery, this army, led by none other than Spartacus himself, rises up to the defy the mighty Roman legions. </p>
+<p style="text-indent: 50px;">
+In this committee delegates will be tasked with building up their armies, crafting military strategy, and definitely freeing themselves from their Roman masters for good. Meanwhile, internal disputes and a volatile morale amongst members of the Rebel Army will threaten their chance of success and even survival. Delegates, it is up to us to free ourselves from the yoke of slavery and the tyranny of our masters, and defeat the great Roman Army once and for all!
+
+
+								</p>
+
+<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee (either one for Rebel or one for Roman)
+								</p>
+
+								<h3>Roman Description:</h3>
+								<p style="text-indent: 50px;">
+
+								The great will prosper, the weak will fall, and the fate of Rome lies in the hands of its most loyal servants ... This is the War of Spartacus. The year is 73 BC, and Rome is about to take on its greatest and most imminent threat to date. Asa slavearmyrebelsagainst us,threatening our social, political, military and economic orderthe prestige and security of our Republic is at stake, and we must stop at nothingto protect it. 
+								</p>
+								<p style="text-indent: 50px;">
+								In this committee, delegates will face unprecedented challengesand obstacles in their quest to restore the Roman Republic to predominance. While navigating the military aspect of this conflict, they will be expected to simultaneously stabilize and protect Roman interests on economic, geographical and political fronts. It’s time for Rome to be bold, be brave, and come out on top, once and for all.
+								</p>
+
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee (either one for Rebel or one for Roman)
+								</p>
+
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 235px"><img src="{% static 'parallax/Pictures/Third1.jpg' %}" alt="Name 1" class="img-responsive"></div>
+										<h3 class="name">Madeleine Kausel</h3>
+										<p class="text-alt"><small>Rebel Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 235px"><img src="{% static 'parallax/Photos/Third5.jpg' %}" alt="Name 5" class="img-responsive"></div>
+										<h3 class="name">Garima Karia</h3>
+										<p class="text-alt"><small>Roman Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Third6.png' %}" alt="Name 6" class="img-responsive"></div>
+										<h3 class="name">Frankee Wallace</h3>
+										<p class="text-alt"><small>Rebel Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Third7.jpg' %}" alt="Name 7" class="img-responsive"></div>
+										<h3 class="name">Gordon Barad</h3>
+										<p class="text-alt"><small>Roman Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures/Third2.jpg' %}" alt="Name 2" class="img-responsive"></div>
+										<h3 class="name">Simon Paransky</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Third3.jpg' %}" alt="Name 3" class="img-responsive"></div>
+										<h3 class="name">George Roumeliotis</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Third4.jpg' %}" alt="Name 4" class="img-responsive"></div>
+										<h3 class="name">Tiran</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 275px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">First Scottish War of Independence - Joint Crisis</h2>
+							</div>
+							<div class="modal-body">
+							
+							<div class="col-sm-6">
+							<center><a href="{% static 'BG/JC Scottish War of Indep-England.pdf' %}" class="btn btn-lg">Background Guide - England</a></center>
+							</div>
+
+							<div class="col-sm-6">
+							<center><a href="{% static 'BG/JC Scottish War of Indep-Scotland.pdf' %}" class="btn btn-lg">Background Guide - Scotland</a></center>
+							<br/>
+							</div>
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">In the late 13th century King Edward I of England was looking to extend his power over the entire island of Great Britain. Having conquered the country of Wales in 1282 C.E. Edward Longshanks turned his eyes to the North and the troubled Kingdom of Scotland. The weak John I of Scotland failed at the Battle of Dunbar losing not just his throne, but the freedom of all Scots. Divided among 13 Nobleman with selfish interests, and clans who have long suffered under a feudal system, can the once proud Kingdom of Scotland mount an insurrection against the great power of England? At the same time, can England, so burdened with its wars in France, the crusades, and internal unrest, finally subdue the Northern highlands? 
+								</p>
+								<p style="text-indent: 50px;">
+								This Joint-Crisis Committee will be unlike any delegates have experienced. It will pit two different government structures against each other. On the one side, the English committee will be organized much like a cabinet with positions representing specific portfolios within the English kingdom. Across the border the Scots can expect a great mix of different clansmen, each weak by themselves, and strong together. The fate of Great Britain will lie in the hands of SSUNS 2016!
+								</p>
+
+								<p style="text-indent: 50px;">
+								Please note: a position paper is required for this committee (either one for England or one for Scotland)
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Scot1C.jpg' %}" alt="Orla Mahon" class="img-responsive"></div>
+										<h3 class="name">Orla Mahon</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Scot2C.jpg' %}" alt="Tijana Mitrovic" class="img-responsive"></div>
+										<h3 class="name">Tijana Mitrovic</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 255px"><img src="{% static 'parallax/Pictures_temp/Scot3VC.jpg' %}" alt="Peter Furberg" class="img-responsive"></div>
+										<h3 class="name">Peter Furberg</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Scot4CD.jpg' %}" alt="Yakau Feldman" class="img-responsive"></div>
+										<h3 class="name">Yakau Feldman</h3>
+										<p class="text-alt"><small>Crisis Director</small></p>
+									</div>
+								</div>
+							<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Scot5ACD.jpg' %}" alt="Austin_Northey" class="img-responsive"></div>
+										<h3 class="name">Austin Northey</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Scot6ACD.png' %}" alt="Shiraz Zia" class="img-responsive"></div>
+										<h3 class="name">Shiraz Zia</h3>
+										<p class="text-alt"><small>Assistant Crisis Director</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

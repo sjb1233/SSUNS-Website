@@ -1,0 +1,252 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>
+SSUNS 2016 - Registration </title>
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- Google Font Raleway -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700,300' rel='stylesheet' type='text/css'>
+<!-- Font Awsome Icons CSS -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<!-- Custom CSS -->
+<!-- <link href="css/custom.css" rel="stylesheet"> -->
+<link href="{% static 'css/custom.css' %}" rel="stylesheet">
+<!-- Colors and Backgrounds CSS -->
+<!-- <link href="css/colors_2.css" rel="stylesheet"> -->
+<link href="{% static 'css/colors_2.css' %}" rel="stylesheet">
+<link href="{% static 'css/calc.css' %}" rel="stylesheet">
+</head>
+<body>
+<div id="preloader">
+  <div class="pre_container">
+    <div class="loader">
+    </div>
+  </div>
+</div>
+<!-- Fixed navbar -->
+<nav class="navbar nav_mask_full">
+<div class="navi_container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">
+    Toggle navigation </span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+    </button>
+    <a class="navbar-brand" href="/">
+    SSUNS 2016 </a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li>
+      <a href="/about/">
+      About </a>
+      </li>
+      <li>
+      <a href="/team/">
+      Team </a>
+      </li>
+      <li>
+      <a class="active" href="/reg/">
+      Registration and Travel Info</a>
+      </li>
+      <li>
+      <a href="/committees/">
+      Committees </a>
+      </li>
+      <li>
+      <a href="/staff/">
+      Staff </a>
+      </li>
+      <li>
+      <a href="/contact/">
+      Contact Us </a>
+      </li>
+    </ul>
+  </div>
+  <!--/.nav-collapse -->
+</div>
+<!--/.nav-collapse -->
+</nav>
+<div class="antigap">
+</div>
+<!-- Page Content -->
+
+<div class="clear">
+</div>
+<div class="wow fadeIn tabs_about">
+  <div class="mask">
+    <ul class="menu_tabs" role="tablist">
+      
+      <li class="active">
+      <a class="btn eventime_button" data-toggle="tab" role="button" href="#sectionB">
+      Registration </a>
+      </li>
+      <li>
+      <a class="btn eventime_button" data-toggle="tab" role="button" href="#sectionC">
+      Hotel Info	 </a>
+      </li>
+      <li>
+      <!-- wow fadeInDown btn eventime_button graybtn -->
+      <a class="btn eventime_button" data-toggle="tab" role="button" href="#sectionD">
+      Flights </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="sectionB" class="tab-pane fade in active">
+      
+      <div class="speakers_description">
+      <p style="font-size:20px"> We hope to make registration for SSUNS as straightforward as possible. Please contact Koray Demir, SSUNS Chargé d’Affaires , if you ever have any questions. 
+      </p>
+      
+      <p> Please keep the following deadlines in mind. We accept delegations on a first-come, first-served basis. <br> </p>
+	<p style="font-weight:bold">
+    May 12: Priority registration opens <br>
+	July 31: General registration opens (Priority registration closes) <br>
+	October 6: All registration closes
+      </p>
+      <p>
+      Please note that we can offer full refunds for registration fees up until August 31st. Before October 6th, we continue to offer a 50% refund. Unfortunately, after this date, we cannot refund any registration expenses. <br> <br>
+      Payment for SSUNS consists of two components:  <br>
+1. A one-time delegation fee & <br>
+2. A registration fee per delegate. 
+ <br>
+</p>
+
+</div>
+<p> The fees vary depending on when your school registers. </p>
+<img src="{% static 'images/fees.png' %}"> <br> <br>
+<p> Total Cost = Delegation fee + (Number of delegates x Individual delegate fee) <br> <br>
+
+Payment is by cheque. Please address all cheques to: </p>
+
+<p style="font-weight:bold">
+The International Relations Students’ Association of McGill (IRSAM)  <br>
+3480 McTavish Street, Suite 410 <br>
+Montreal, QC, Canada <br>
+H3A 1X9 </p>
+          <a class="btn eventime_button" href="/registration-form/" role="button" style="color:#F00">
+          REGISTER NOW </a>
+<br> <br> 
+      </div>
+      
+      <div id="sectionC" class="tab-pane fade">
+        <p style="font-weight:bold; color:#F00"> Please fill out the Excel form below, and return it either by fax at 514-878-0028 or by email to pmaisonneuve@hotelbonaventure.com. </p>
+        <p> Please make sure that all the required fields are properly filled out in order to be processed. </p>
+        <p> Reservation deadline is: October 19, 2015, or until the block is filled.
+        <br> All reservations must be fully prepaid no later than October 19, 2015, either by cheque or credit card.  Any reservation completed after October 19 will need to be prepaid by credit card. </p>
+        <br>
+        
+        <p style="font-weight:bold"> RATES ARE PER ROOM, PER NIGHT </p>
+        
+        
+        <img src="{% static 'images/hotelrates.png' %}">
+        <br> <br>
+        <p style="font-weight:bold"> Hotel contact information: </p>
+        <p>
+Hotel contact : Pascal Maisonneuve </p> <p style="font-weight:bold">
+Hôtel Bonaventure Montréal <br>
+900, de La Gauchetière West Street <br>
+Montréal, Québec  H5A 1E4 <br> </p>
+Direct : 514-878-2900  --  Toll free : 800-267-2575 <br>
+www.hotelbonaventure.com
+<br> <br> 
+<a class="wow fadeInLeft btn eventime_button" href="{% static 'images/SSUNSHOTELFORM2015.xlsx' %}" role="button" style="color:#F00">
+          DOWNLOAD FORM </a>
+          <br> <br> 
+      </div>
+      
+      <div id="sectionD" class="tab-pane fade">
+        <div class="title_center">
+  <p style="color:#09F"> Discounted Flights - Star Alliance </p>
+	</div>
+        <p style="font-weight:bold; color:red"> SAVE UP TO 20% ON TRAVEL WITH THE STAR ALLIANCE™ NETWORK </p>
+        
+        
+        <p> The Star Alliance member airlines are pleased to be appointed as the Official Airline Network for Secondary Schools United Nations Symposium. <br> <br>
+        
+        <a href="http://conventionsplusbookings.staralliance.com/trips/StarHome.aspx?meetingcode=AC25S15"> <img src="{% static 'images/starlogo.png' %}"> </a>  <br> <br>
+        <a href="http://conventionsplusbookings.staralliance.com/trips/StarHome.aspx?meetingcode=AC25S15"> <img src="{% static 'images/Flight_path_conv_plus_delegates_leaderboard_option_2.gif' %}"> </a> 
+        
+        <br> <br>
+        
+        
+        To obtain the Star Alliance Conventions Plus discounts please visit Conventions Plus online booking tool - <a href="http://conventionsplusbookings.staralliance.com/trips/StarHome.aspx?meetingcode=AC25S15"> http://conventionsplusbookings.staralliance.com/trips/StarHome.aspx?meetingcode=AC25S15 </a> <br> <br>
+      </p>
+      <p style="font-size:10px">  
+      
+        Registered participants plus one accompanying person travelling to the event can qualify for a discount of up to 20%, depending on fare and class of travel booked. <br>
+
+The participating airlines for this event are: ANA, Adria Airways, Aegean Airlines, Air Canada, Air China, Air India, Air New Zealand, Asiana Airlines,
+
+Austrian Airlines, Avianca, Brussels Airlines, Copa Airlines, Croatia Airlines, EVA Airways, EgyptAir,
+
+Ethiopian Airlines, LOT Polish Airlines, Lufthansa, SWISS, Scandinavian Airlines, Shenzhen Airlines,
+
+Singapore Airlines, South African Airways, TAP Portugal, THAI, Turkish Airlines, United. <br>
+
+Discounts are offered on most published business and economy class fares, excluding website/internet fares, senior and youth fares, group fares and Round the World fares. <br> 
+
+When making your travel plans please present confirmation of your registration or proof of attendance for the Event/Convention. 
+
+Special procedures to be followed for travel to/from Japan.Discounts may be offered by the participating airlines on their own network. To obtain these discounts please contact the respective carriers’ booking office. Contact details can be found on  www.staralliance.com/conventionsplus/delegates/ under “Conventions Plus Booking Contacts”. please quote the event code AC25S15 for ticket reservation.
+</p>
+        
+        
+
+        
+        
+        
+        
+        
+        
+      </div>
+      
+    
+  <div class="wow fadeIn first_image">
+  </div>	
+</div>
+
+    
+    
+    
+    </div>
+  </div>
+</div>
+<!-- End About -->
+
+
+<footer>
+    <div class="footer">
+      <a href="https://www.facebook.com/officialssuns" class="contact_icon fa fa-facebook">
+      </a>
+      <a href="https://twitter.com/ssuns_official" class="contact_icon fa fa-twitter">
+      </a>
+      <a href="https://ca.linkedin.com/company/international-relations-students%27-association-of-mcgill-inc-" class="contact_icon fa fa-linkedin">
+      </a>
+      <a href="https://instagram.com/ssuns_official/" class="contact_icon fa fa-instagram">
+      </a>
+      <p class="copyright"><span>&copy;</span>Copyright SSUNS <span>2016</span>Design by USG-IT</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/minify.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/calc.js' %}"></script>
+</body>
+</html>

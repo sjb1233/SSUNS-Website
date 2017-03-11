@@ -1,0 +1,205 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+
+
+
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+
+							<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+
+
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">About Us</h5>
+			<p class="text-alt" style="margin-bottom: 0px;">"to foster today's youth into the <span class="highlight">leaders</span> of tomorrow"</p>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="tabs-wrapper tabs-horizontal">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">
+						<h6 class="h7">SSUNS and IRSAM</h6>
+						<p class="text-alt">Our Conference</p>
+					</a></li>
+					<li><a href="#tab2" data-toggle="tab">
+						<h6 class="h7">Our Charity</h6>
+						<p class="text-alt">UNICEF</p>
+					</a></li>
+					<li><a href="#tab3" data-toggle="tab">
+						<h6 class="h7">The City of Montreal</h6>
+						<p class="text-alt">Located in Quebec, Canada</p>
+					</a></li>
+					<li><a href="#tab4" data-toggle="tab">
+						<h6 class="h7">Hotel Bonaventure</h6>
+						<p class="text-alt">Premier Conference Facilities</p>
+					</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="tab1" class="tab-pane fade active in">
+						<article class="col-sm-7">
+							<h3>The History behind our Conference</h3> <br>
+								<p>
+It began with a simple idea. <br> <br>
+
+The hope was to create a place for high school students to explore the scope of global issues around them and to offer an opportunity for these students to take part as active young leaders. The reality has gone above and beyond the initial vision for Secondary Schools’ United Nations Symposium, and has only continued to expand and innovate in every possible capacity ever since.
+
+						</p><br/>	<h3>For those new to our Conference</h3> <br>
+								<p>
+The Secondary Schools' United Nations Symposium (SSUNS) is a Model United Nations conference in Montreal, Quebec. Our venue is the Hotel Bonaventure Montreal, and our conference
+will be from November 10th - 13th of this year. <br> <br>
+Please refer to the Registration page for information regarding fees, for the refund policy, and for the registration form and the Committee page for the list of committees at SSUNS 2016.
+</p>
+						</article>
+						<div class="col-sm-5">
+							<img src="{% static 'assets/img/a1.png' %}" alt="" class="img-responsive" />
+						</div>
+					</div>
+
+					<div id="tab2" class="tab-pane fade">
+						<article class="col-sm-7">
+							<h3>McGill Students for UNICEF</h3> <br>
+							<p> Representing UNICEF on campus, our group aims to raise funds and awareness for children’s issues in innovative and engaging ways that promote community on campus and globally. </p>
+							<br/><br/><br/><br/><br/><br/><br/><br/>
+						</article>
+						<div class="col-sm-5">
+							<img src="{% static 'assets/img/watermark.jpg' %}" alt="" class="img-responsive" />
+						</div>
+					</div>
+
+					<div id="tab3" class="tab-pane fade">
+						<article class="col-sm-7">
+							<h3>Located in Montreal, Quebec</h3> <br>
+							<p> Montréal is the largest city in Québec. Predominantly French-speaking, it’s set on an island in the Saint Lawrence River and named after Mt. Royal, the triple-peaked hill at its heart.</p>
+						</article>
+						<div class="col-sm-5">
+							<br/><br/>
+							<img src="{% static 'assets/img/a3.png' %}" alt="" class="img-responsive" />
+						</div>
+					</div>
+
+					<div id="tab4" class="tab-pane fade">
+						<article class="col-sm-7">
+							<h3>Premier Conference Facilities</h3> <br>
+							<p>Hotel Bonaventure Montreal is located in the heart of downtown Montreal with excellent conference facilities, views and vacation packages.</p>
+					<p><h5><br/>Hotel contact information:</h5><br/>
+
+Hotel contact : <b>Lise Desgroseilliers</b><br/>
+
+Hôtel Bonaventure Montréal <br/>
+900, de La Gauchetière West Street <br/> 
+Montréal, Québec H5A 1E4 <br/>
+Direct : 514-878-2993 -- Toll free : 800-267-2575 <br/>
+Email : ldesgroseilliers@hotelbonaventure.com <br/>
+<b>ROOM BLOCK COMPLETELY FILLED. <br/>INFORMATION ON OVERFLOW HOTELS WILL BE UPDATED SHORTLY</b><br/>
+<a href="http://www.hotelbonaventure.com">www.hotelbonaventure.com</a>&nbsp;&nbsp;<a href="{% static 'assets/RESERVATIONSSSUNS2016.xlsx' %}" target="_blank"> Download Reservation Form </a>
+<br/>
+<img src="{% static 'assets/img/hotel_price.png' %}" alt="" />
+</p>
+
+						</article>
+						<div class="col-sm-5">
+							<img src="{% static 'assets/img/a4.png' %}" alt="" class="img-responsive" />
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

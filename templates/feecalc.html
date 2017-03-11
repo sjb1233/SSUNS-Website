@@ -1,0 +1,8 @@
+						<h6 class="h7">Fee Calculator</h6>
+
+						<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+						<div data-ng-app="" data-ng-init="quantity=1;price=90">
+						Please enter number of delegates: <input type="number" ng-model="quantity">
+						<p> (Number of delegates * Delegate Fee) + Delegation Fee
+						<p><b>Total in dollars: (Priority Registration)</b> $ {{quantity * price + 90}}</p>
+						</div>

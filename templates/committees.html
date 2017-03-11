@@ -1,0 +1,330 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" type='images/x-icon' href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="/about/" class="navigation-link">About</a></li>
+							<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							<li class="navigation-item"><a href="/committees/" class="navigation-link">Committees</a></li>
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Committees</h5>
+			<p class="text-alt" style="margin-bottom: 0px;">GAs, ECOSOCs, SAs, and Crises</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+
+			<div class="col-sm-6">
+				<div class="panel-group panel-group-alt" id="accordion">
+					<div class="panel">
+						<a data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="true"><span class="fa fa-bullhorn"></span> GA - UNGA</a>
+						<div id="panel1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>United Nations General Assembly</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel2" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - UNFCCC</a>
+						<div id="panel2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>United Nations Framework Convention on Climate Change</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel3" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - UNESCO</a>
+						<div id="panel3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>United Nations Educational, Scientific and Cultural Organization</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel4" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - AU</a>
+						<div id="panel4" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>African Union</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel5" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - CSW</a>
+						<div id="panel5" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>Commission on the Status of Women</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel6" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - UNESCAP</a>
+						<div id="panel6" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>United Nations Economic and Social Council for Asia and the Pacific</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel7" aria-expanded="false"><span class="fa fa-bullhorn"></span> GA - WHO</a>
+						<div id="panel7" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">General Assemblies</span> </h6>
+								<p>World Health Organization</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel8" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - Bilingual</a>
+						<div id="panel8" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>Canadian Confederation</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel9" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - NFL 2016</a>
+						<div id="panel9" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>National Football League 2016</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel10" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - Microsoft</a>
+						<div id="panel10" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>Board of Directors</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel11" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - IAEA</a>
+						<div id="panel11" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>International Atomic Energy Agency 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel12" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - Venezuela</a>
+						<div id="panel12" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>Venezuelan National Assembly</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="panel-group panel-group-alt" id="accordion2">
+					<div class="panel">
+						<a data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel1" aria-expanded="true"><span class="fa fa-bullhorn"></span> SA - Congress</a>
+						<div id="acc2-panel1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>8th United States Congress 1803</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel2" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - Czechoslovakia</a>
+						<div id="acc2-panel2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>Czechoslovakian Government 1990</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel3" aria-expanded="false"><span class="fa fa-bullhorn"></span> SA - ICAO</a>
+						<div id="acc2-panel3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Specialized Agencies</span> </h6>
+								<p>United Nations Office for Outer Space Affairs and International Civil Aviation Organization—3rd International Symposium 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel4" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Ad Hoc</a>
+						<div id="acc2-panel4" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Ad Hoc</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel5" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Literary</a>
+						<div id="acc2-panel5" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>The Handmaid’s Tale</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel6" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - NASA</a>
+						<div id="acc2-panel6" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Apollo 13</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel7" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Queen Anne's Revenge</a>
+						<div id="acc2-panel7" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Crew of the Queen Anne’s Revenge</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel8" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Salem</a>
+						<div id="acc2-panel8" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Salem Village 1692</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel9" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - WWII</a>
+						<div id="acc2-panel9" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Britain WWII</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel10" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Joint</a>
+						<div id="acc2-panel10" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>3rd Servile Revolt</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#acc2-panel11" aria-expanded="false"><span class="fa fa-bullhorn"></span> Crises - Joint</a>
+						<div id="acc2-panel11" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h6><span class="highlight">Crises</span> </h6>
+								<p>Scottish War of Independence</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+	</section>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

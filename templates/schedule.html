@@ -1,0 +1,1063 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="/about/" class="navigation-link">About</a></li>
+							<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+
+
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">SSUNS Schedule</h5>
+			<p class="text-alt" style="margin-bottom: 80px;"></p>
+
+			<p> <b>The list of which committees are in Block A and which committees are in Block B will be in the delegate handbook. </b></p><br/>
+			<p> Click <a href="{% static 'assets/sche.pdf' %}">here</a> for a pdf version of the schedule.</p>
+			<br/>
+			<!-- Schedule start -->
+			<div class="schedule">
+
+				<!-- Navigation by day start -->
+				<ul class="nav nav-schedule">
+					<li class="active"><a href="#day1" data-toggle="tab"><h5 class="highlight">Thursday</h5><p class="text-alt">10/11/2016</p></a></li>
+					<li><a href="#day2" data-toggle="tab"><h5 class="highlight">Friday</h5><p class="text-alt">11/11/2016</p></a></li>
+					<li><a href="#day3" data-toggle="tab"><h5 class="highlight">Saturday</h5><p class="text-alt">12/11/2016</p></a></li>
+					<li><a href="#day4" data-toggle="tab"><h5 class="highlight">Sunday</h5><p class="text-alt">13/11/2016</p></a></li>
+				</ul>
+				<!-- Navigation by day end -->
+
+				<!-- First level content start -->
+				<div class="tab-content">
+
+					<!-- Day 1 content start -->
+					<div id="day1" class="tab-pane fade active in">
+
+						<!-- Navigation by auditorium start -->
+						<ul class="nav nav-schedule">
+							<li class="active"><a href="#day1_auditorium1" data-toggle="tab">General Events</a></li>
+							<li><a href="#day1_auditorium2" data-toggle="tab">Committee Block A</a></li>
+							<li><a href="#day1_auditorium3" data-toggle="tab">Committee Block B</a></li>
+						</ul>
+						<!-- Navigation by auditorium start -->
+
+						<!-- Second level content start -->
+						<div class="tab-content tab-content-schedule">
+
+							<!-- Auditorium 1 content start -->
+							<div id="day1_auditorium1" class="tab-pane fade active in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day1_auditorium1_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:00 - 17:30</strong>
+											<h6 class="title">Delegate Registration<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">
+													Come to the Registration (at the bottom of the escalators) to grab your padfolios and delegate badges.
+												</p>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper"></div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:00 - 17:30</strong>
+											<h6 class="title">MUN Training, Workshop, & Demo<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium1_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Come learn the intricacies of Model United Nations from one of the best delegations in North America (location: Fontaine B)</p>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>18:00 - 19:30</strong>
+											<h6 class="title">Opening Ceremonies<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium1_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Location: Ballroom</p>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+						
+										</div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time4" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>19:45 - 22:00</strong>
+											<h6 class="title">SSUNS Walkway<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium1_time4" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Come meet McGill Clubs, Charities, and various organizations (Location: Outside the Ballroom)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day1_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day1_auditorium2_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										</div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium2_timeline" href="#day1_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>20:00 - 21:45</strong>
+											<h6 class="title">Pre-Conference Session SA/CRISES ONLY<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<!-- <p class="description"></p> -->
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 2 content end -->
+
+							<!-- Auditorium 3 content start -->
+							<div id="day1_auditorium3" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day1_auditorium3_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										</div>
+										<a data-toggle="collapse" data-parent="#day1_auditorium2_timeline" href="#day1_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>20:15 - 22:00</strong>
+											<h6 class="title">Pre-Conference Session SA/CRISES ONLY<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day1_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<!-- <p class="description"></p> -->
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 3 content end -->
+
+						</div>
+						<!-- Second level content end -->
+
+					</div>
+					<!-- Day 1 content end -->
+
+					<!-- Day 2 content start -->
+					<div id="day2" class="tab-pane fade in">
+
+						<!-- Navigation by auditorium start -->
+						<ul class="nav nav-schedule">
+							<li class="active"><a href="#day2_auditorium1" data-toggle="tab">General Events</a></li>
+							<li><a href="#day2_auditorium2" data-toggle="tab">Committee Block A</a></li>
+							<li><a href="#day2_auditorium3" data-toggle="tab">Committee Block B</a></li>
+						</ul>
+						<!-- Navigation by auditorium end -->
+
+						<!-- Second level content start -->
+						<div class="tab-content tab-content-schedule">
+
+							<!-- Auditorium 1 content start -->
+							<div id="day2_auditorium1" class="tab-pane fade active in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day2_auditorium1_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:00 - 11:30</strong>
+											<h6 class="title">Discover Montreal<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Guided tour around Montreal (Location: Meet in the Lobby)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:00 - 12:00</strong>
+											<h6 class="title">Art of the Speech: Public Speaking Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop on how to make the best speeches. (Location: Fontaine C) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time4" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:00 - 12:00</strong>
+											<h6 class="title">Crisis at Hand: Crisis Committees Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time4" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop explaining in detail Crisis committees and how to approach them. (Location: Fontaine D) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time5" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:00 - 12:00</strong>
+											<h6 class="title">Resolution Writing Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time5" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop on how to write good resolutions. (Location: Fontaine E) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time6" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:00 - 12:00</strong>
+											<h6 class="title">The Best Delegate Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time6" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop for advanced delegates looking to elevate their performance. (Location: Fontaine F) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time15" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:30 - 12:00</strong>
+											<h6 class="title">Faculty Advisor Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time15" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">If you have any questions, concerns, or suggestions, voice them to our Secretariat.<br/>(Location: Lower Bonaventure)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time16" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:30 - 12:00</strong>
+											<h6 class="title">Head Delegate Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time16" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Meeting with the head delegates of each delegation.<br/>(Location: Mont-Royal)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+
+
+
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time7" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:00 - 13:00</strong>
+											<h6 class="title">Art of the Speech: Public Speaking Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time7" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop on how to make the best speeches. (Location: Fontaine C) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time8" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:00 - 13:00</strong>
+											<h6 class="title">Crisis at Hand: Crisis Committees Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time8" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop explaining in detail Crisis committees and how to approach them. (Location: Fontaine D) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time9" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:00 - 13:00</strong>
+											<h6 class="title">Resolution Writing Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time9" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop on how to write good resolutions. (Location: Fontaine E) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time10" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:00 - 13:00</strong>
+											<h6 class="title">The Best Delegate Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time10" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Workshop for advanced delegates looking to elevate their performance. (Location: Fontaine F) <br/>NOTE: Session II is identical to Session I</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time20" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>14:00 - 15:30</strong>
+											<h6 class="title">FacAd Crisis Simulation<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time20" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Faculty Advisors listen up! This is your chance to step into your delegate’s shoes to experience the action of the committees for yourself!<br/>(Location: Salon Bonaventure)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time25" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:45 - 17:15</strong>
+											<h6 class="title">Faculty Advisor Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time25" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">If you have any questions, concerns, or suggestions, voice them to our Secretariat.<br/>(Location: Lower Bonaventure)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time26" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:45 - 17:15</strong>
+											<h6 class="title">Head Delegate Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time26" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Meeting with the head delegates of each delegation.<br/>(Location: Mont-Royal)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time36" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>19:00 - 21:00</strong>
+											<h6 class="title">FacAd Dinner<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium1_time36" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">We have organized a dinner for faculty advisors at a restaurant in Old Montreal,<br/>(Meeting Location: Lobby)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day2_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day2_auditorium2_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium2_timeline" href="#day2_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>13:15 - 16:30</strong>
+											<h6 class="title">Committee Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all committees</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium2_timeline" href="#day2_auditorium2_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>18:30 - 21:45</strong>
+											<h6 class="title">Committee Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium2_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all committees</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 2 content end -->
+
+							<!-- Auditorium 3 content start -->
+							<div id="day2_auditorium3" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day2_auditorium3_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium3_timeline" href="#day2_auditorium3_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>13:30 - 16:45</strong>
+											<h6 class="title">Committee Session I<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium3_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all committees</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium3_timeline" href="#day2_auditorium3_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>18:45 - 22:00</strong>
+											<h6 class="title">Committee Session II<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day2_auditorium3_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all committees</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 3 content end -->
+
+						</div>
+						<!-- Second level content end -->
+
+					</div>
+					<!-- Day 2 content end -->
+
+					<!-- Day 3 content start -->
+					<div id="day3" class="tab-pane fade in">
+
+						<!-- Navigation by auditorium start -->
+						<ul class="nav nav-schedule">
+							<li class="active"><a href="#day3_auditorium1" data-toggle="tab">General Events</a></li>
+							<li><a href="#day3_auditorium2" data-toggle="tab">Committee Block A</a></li>
+							<li><a href="#day3_auditorium3" data-toggle="tab">Committee Block B</a></li>
+						</ul>
+						<!-- Navigation by auditorium end -->
+
+						<!-- Second level content start -->
+						<div class="tab-content tab-content-schedule">
+
+							<!-- Auditorium 1 content start -->
+							<div id="day3_auditorium1" class="tab-pane fade active in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium1_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time25" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:30 - 12:00</strong>
+											<h6 class="title">Faculty Advisor Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time25" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">If you have any questions, concerns, or suggestions, voice them to our Secretariat.<br/>(Location: Lower Bonaventure)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time26" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:30 - 12:00</strong>
+											<h6 class="title">Head Delegate Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time26" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Meeting with the head delegates of each delegation.<br/>(Location: Mont-Royal)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>11:30 - 13:25</strong>
+											<h6 class="title">ICAO Tours (tentative)<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">This event is tentative. More information to come.</p>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time35" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:45 - 17:15</strong>
+											<h6 class="title">Faculty Advisor Meeting<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time35" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">If you have any questions, concerns, or suggestions, voice them to our Secretariat.<br/>(Location: Lower Bonaventure)</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>21:00 - 00:00</strong>
+											<h6 class="title">Delegate GALA<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Location: Ballroom</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>21:00 - 00:00</strong>
+											<h6 class="title">Faculty Advisor Cocktail<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium1_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">We are happy to welcome faculty advisors to a cocktail event, at the courtesy of SSUNS.<br/>Location: Ville-Marie</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day3_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium2_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium2_timeline" href="#day3_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:00 - 11:15</strong>
+											<h6 class="title">Committee Session III<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium2_timeline" href="#day3_auditorium2_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>13:15 - 15:30</strong>
+											<h6 class="title">Committee Session IV<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium2_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium2_timeline" href="#day3_auditorium2_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:00 - 18:15</strong>
+											<h6 class="title">Committee Session V<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium2_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 2 content end -->
+
+							<!-- Auditorium 3 content start -->
+							<div id="day3_auditorium3" class="tab-pane fade in">
+
+																<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium3_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium3_timeline" href="#day3_auditorium3_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:15 - 11:30</strong>
+											<h6 class="title">Committee Session III<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium3_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium3_timeline" href="#day3_auditorium3_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>13:30 - 15:45</strong>
+											<h6 class="title">Committee Session IV<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium3_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium3_timeline" href="#day3_auditorium3_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>16:15 - 18:30</strong>
+											<h6 class="title">Committee Session V<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day3_auditorium3_time3" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+									
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									</div>
+
+							</div>
+							<!-- Auditorium 3 content end -->
+
+						</div>
+						<!-- Second level content end -->
+
+					</div>
+					<!-- Day 3 content end -->
+
+					<!-- Day 4 content start -->
+					<div id="day4" class="tab-pane fade in">
+
+						<!-- Navigation by auditorium start -->
+						<ul class="nav nav-schedule">
+							<li class="active"><a href="#day4_auditorium1" data-toggle="tab">General Events</a></li>
+							<li><a href="#day4_auditorium2" data-toggle="tab">Committee Block A</a></li>
+							<li><a href="#day4_auditorium3" data-toggle="tab">Committee Block B</a></li>
+						</ul>
+						<!-- Navigation by auditorium start -->
+
+						<!-- Second level content start -->
+						<div class="tab-content tab-content-schedule">
+
+							<!-- Auditorium 1 content start -->
+							<div id="day4_auditorium1" class="tab-pane fade active in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day4_auditorium1_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>13:15 - 14:45</strong>
+											<h6 class="title">Closing Ceremonies<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day4_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Location: Ballroom</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day4_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day4_auditorium2_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium2_timeline" href="#day4_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:00 - 11:30</strong>
+											<h6 class="title">Committee Session VI<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day4_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+												
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 2 content end -->
+
+							<!-- Auditorium 3 content start -->
+							<div id="day4_auditorium3" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day4_auditorium3_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+										
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium3_timeline" href="#day4_auditorium3_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:15 - 11:45</strong>
+											<h6 class="title">Committee Session VI<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day4_auditorium3_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">For all delegates</p>
+										
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 3 content end -->
+
+						</div>
+						<!-- Second level content end -->
+
+					</div>
+					<!-- Day 4 content end -->
+
+
+				</div>
+				<!-- First level content end -->
+
+			</div>
+			<!-- Schedule end -->
+		</div>
+	</section>
+
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

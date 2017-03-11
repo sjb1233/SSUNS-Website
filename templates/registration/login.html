@@ -1,0 +1,66 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+    <section class="section bg-cover bg1">
+        <div class="container light-text align-center">
+            <h5 class="heading-alt">SSUNS Dashboard Login</h5>
+            <p class="text-alt" style="margin-bottom: 0px;"><span class="highlight">Login</span> to the SSUNS Dashboard to access your delegation's information and view information pertaining to the conference.</p>
+        </div>
+        <br/><br/>
+
+
+        <div class="container">
+                <form method="post" action="" class="form registration-form align-left">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <center><input class='btn btn-primary btn-lg' type="submit" value="{% trans 'Log in' %}" /></center>
+                    <input type="hidden" name="next" value="{{ next }}" />
+                    <br/>
+                <p>{% trans "Forgot your password?" %} <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>.</p>
+                <p>{% trans "Not a member?" %} <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>.</p>
+                </form>
+                 <br/><br/> <br/><br/>
+        </div>
+    </section>
+    <section style="height: 0px">
+
+        <div class="footer-base" style="height: 95px">
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+
+{% comment %}
+**registration/login.html**
+
+It's your responsibility to provide the login form in a template called
+registration/login.html by default. This template gets passed four
+template context variables:
+
+``form``
+    A Form object representing the login form. See the forms
+    documentation for more on Form objects.
+
+``next``
+    The URL to redirect to after successful login. This may contain a
+    query string, too.
+
+``site``
+    The current Site, according to the SITE_ID setting. If you don't
+    have the site framework installed, this will be set to an instance
+    of RequestSite, which derives the site name and domain from the
+    current HttpRequest.
+
+``site_name``
+    An alias for site.name. If you don't have the site framework
+    installed, this will be set to the value of
+    request.META['SERVER_NAME']. For more on sites, see The
+    "sites" framework.
+{% endcomment %}

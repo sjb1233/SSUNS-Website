@@ -1,0 +1,49 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans "Register for an account" %}{% endblock %}
+
+{% block content %}
+	<section class="section bg-cover bg1">
+		<div class="container light-text align-center">
+			<h5 class="heading-alt">SSUNS Dashboard Registration</h5>
+			<p class="text-alt" style="margin-bottom: 0px;"><span class="highlight">The Dashboard</span> will contain all
+			the information pertaining to your delegation and will allow for you to input your delegates names. After you register, an email will be sent to your email; click on the link to confirm your registration.</p>
+		</div>
+		<br/><br/>
+
+
+		<div class="container">
+				<form method="post" action="" class="form registration-form align-left">
+				    {% csrf_token %}
+				    {{ form|crispy }}
+				    <b style="font-size:12px">Please ensure that your password is longer than 5 characters and use the Faculty Advisor email, provided in the conference registration, as the email above. Also, it is recommended that your delegation comes up with the username and password as a whole, since delegates will need to access the dashboard to submit position papers. </b><br/><br/>
+				   <b style="font-size:14px">NOTE: Make sure you have registered for the conference before you sign-up for the dashboard (visit the 'Registration' page on the website). Also, after you sign-up for the dashboard, a message will be sent to the email you provided. You must click on the link in this message in order to activate your account</b><br/> 
+				<br/>
+				    <center><input class='btn btn-primary btn-lg' type="submit" value="{% trans 'Submit' %}" /></center>
+				</form>
+		</div>
+	</section>
+	<section style="height: 0px">
+
+		<div class="footer-base" style="height: 95px">
+			<div class="container">
+
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+
+
+{% comment %}
+**registration/registration_form.html**
+Used to show the form users will fill out to register. By default, has
+the following context:
+
+``form``
+    The registration form. This will be an instance of some subclass
+    of ``django.forms.Form``; consult `Django's forms documentation
+    <http://docs.djangoproject.com/en/dev/topics/forms/>`_ for
+    information on how to display this in a template.
+{% endcomment %}

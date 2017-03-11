@@ -1,0 +1,171 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+
+<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h3>Registration Information</h3>
+			<p class="text-alt">We hope to make registration as straightforward as possible. <br> Please contact Wendy Zhang, SSUNS Chargée d'Affaires, at schools@ssuns.org if you ever have any questions.</p>
+			<br />
+
+			<div class="col-sm-6">
+				<article>
+					<h6>Registration <span class="highlight">Dates </span> </h6>
+
+					<p class="align-left">
+
+						<h6 class="h7"><span class="highlight">Priority</span> Registration</h6>
+				<p> Registration will be open from May 12 - July 30. </p>
+				<h6 class="h7"><span class="highlight">Regular</span> Registration</h6>
+				<p> Registration will be open on July 31. </p>
+
+				<span class="highlight"> Registration will officially close on October 7. However, we will be opening the waitlist registration on a first-come first-serve basis (if capacity permits). </span>
+			<br> <br>
+				<h6>Payment <span class="highlight">Methods </span> </h6>
+				<h6 class="h7"><span class="highlight">Online</span> (Paypal)</h6>
+				<p> Please note that there is a 3% convenience fee for online payments, due to a fee charged to us by PayPal. </p> <br>
+				<h6 class="h7"><span class="highlight">By Mail</span> (Cheque)</h6>
+				<p> A cheque made out to IRSAM (International Relations Students' Association of McGill) must be received at: IRSAM Inc.; 3480 Rue McTavish; Montreal, QC, Canada H3A 1X9 </p>
+
+					<span class="highlight"> If you have any questions please contact our Chargee D’Affaires, Wendy Zhang, at schools@ssuns.org </span>
+
+				</article>
+			</div>
+
+			<div class="col-sm-6">
+				<article>
+
+					<h6>Registration <span class="highlight"> Fees </span> </h6>
+
+					<p class="align-left">
+					<h6 class="h7"><span class="highlight">Priority</span> Registration</h6>
+						A one-time, non-refundable fee of $90 per delegation (regardless of delegation size.)
+						<br> <span class="highlight"> + </span> <br>
+						A fee of $90 per delegate, tax included. <br><br>
+						<h6 class="h7"><span class="highlight">Regular</span> Registration</h6>
+						A one-time, non-refundable fee of $95 per delegation (regardless of delegation size.)
+						<br> <span class="highlight"> + </span> <br>
+						A fee of $95 per delegate, tax included. <br><br>
+
+<span class="highlight"> Please note that both American and overseas schools pay in USD and Canadian schools pay in Canadian dollars.</span>
+		<br/><br/>	
+					<h6 class="h7"><span class="highlight">Refund</span> Policy</h6>
+						Please note that we can offer full refunds* for registration fees up until August 31st. 
+						Before October 6th, we continue to offer a 50% refund*. 
+						Unfortunately, after this date, we cannot refund any registration expenses.
+						<br/><br/>
+						<b>*Note: The refund does not include the one-time delegation fee</b> 
+
+				</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section bg-cover overlay overlay-clr bg4 light-text align-center">
+			<div class="container">
+				<h2>Register for SSUNS</h2>
+				<p>Registration will open May 12.</p>
+				<br />
+				<br />
+				<a href="/form/" class="btn btn-lg btn-outline">Register </br> Status: OPEN </a>
+				<!--<a href="/comingsoon/" class="btn btn-lg btn-outline">Register </br> Status: NOT OPEN </a>-->
+			</div>
+		</section>
+
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

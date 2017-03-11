@@ -1,0 +1,684 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016 - Specialised Agencies</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" type='images/x-icon' href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" /> -->
+	<link rel="stylesheet" href="{% static 'parallax/style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Specialised Agencies</h5>
+		</div>
+	</section>
+
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="portfolio" class="portfolio portfolio-parallax clearfix">
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/Congress.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal">8th Congress</a></h3>
+							<span><font size="5">United States, 1803</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/Confed.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal2">Canadian Confederation</a></h3>
+							<span><font size="5">Bilingual Committee</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/IAEA.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal3">International Atomic Energy Agency 2017</a></h3>
+							<span><font size="5">Specialized Agency </font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+										<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/Czech.png' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal4">Czechoslovakia Government 1990</a></h3>
+							<span><font size="5">Specialized Agency</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/ICAO.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal5">3rd International Symposium 2017</a></h3>
+							<span><font size="5">United Nations Office for Outer Space Affairs and International Civil Aviation Organization</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/NA.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal6">Venezuelan National Assembly</a></h3>
+							<span><font size="5">Specialized Agency</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/football.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal7">National Football League 2016</a></h3>
+							<span><font size="5">Specialized Agency</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/micro.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal8">Board of Directors</a></h3>
+							<span><font size="5">Microsoft</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+<!-- MODALS -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">8th Congress United States, 1803</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/Congress.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The 8th U.S. Congress is a committee that will bring you back to the frontier, facing out upon the great Mississippi and the Louisiana Territory. The year is 1803, and The United States “are” expanding westwards, currently controlled by the French, ruled by Napoleon. Meanwhile, in the heart of Washington, Congress is divided over what action might be taken in response to the assertion of judiciary power issued the Supreme Court. Further east, in the Mediterranean, U.S. Navy vessels of war are on a mission to wrest the coast of North Africa and to put an end to the malfeasant Piracy of the Barbary States. The United States is at a time of formation, growing from infant republic to baby empire – and it is up to delegates to ensure that the country continues on this path.
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Congress3.jpg' %}" alt="Ben Butz-Weidner" class="img-responsive"></div>
+										<h3 class="name">Ben Butz-Weidner</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Congress4.jpg' %}" alt="Angad Singh" class="img-responsive"></div>
+										<h3 class="name">Angad Singh</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Congress1.jpg' %}" alt="Alex Nehrbass" class="img-responsive"></div>
+										<h3 class="name">Alex Nehrbass</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Congress2.jpg' %}" alt="Noah" class="img-responsive"></div>
+										<h3 class="name">Noah Powers</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Canadian Confederation - Bilingual Committee</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/cancon.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The Canadian Confederation committee will reenact the important debates that took place in Charlottetown and Québec City in 1864. These conferences laid the groundwork for what ultimately became the Canadian federation in 1867 by an Act of the Imperial Parliament, styled the British North America Act. Our committee begins on September 1st, 1864, the first day of the Charlottetown Conference, so as to allow our delegates to take into consideration the many options offered to them in creating this new country: a maritime union, a larger federal union, or a unitary state (what John A. Macdonald called a “legislative union”). In doing so, delegates will have to consider the impact of this union on British North America’s political institutions, its economy and its foreign policy and defense.  
+								</p>
+								<p style="text-indent: 50px;">
+								En tant que politiciens des colonies de l’Amérique du Nord britannique, les délégué(e)s devront affronter leurs collègues dans le but de protéger les intérêts de leur région, tout en assurant de compromettre sur les enjeux d’intérêts communs. C’est cet équilibre qui fera notamment l’objet de débats intenses durant la Conférence SSUNS 2016.
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Bil1.jpg' %}" alt="Jesse" class="img-responsive"></div>
+										<h3 class="name">Jesse Hartery</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Bil2.jpg' %}" alt="Daniele" class="img-responsive"></div>
+										<h3 class="name">Daniele Medlej</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Bil3.jpg' %}" alt="Marian" class="img-responsive"></div>
+										<h3 class="name">Marian Daubioul</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Bil4.jpg' %}" alt="Yulia" class="img-responsive"></div>
+										<h3 class="name">Yulia Yugay</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">International Atomic Energy Agency 2017</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/IAEA.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The International Atomic Energy Agency (IAEA) is an international organization created under the auspices of the United Nations that seeks to promote the safe, secure, and peaceful use of nuclear technologies. Headquartered in Vienna, the creation of the IAEA was first proposed by the President of the United States, Dwight D. Eisenhower in 1953 as a part of his address Atoms for Peace, to the United Nations General Assembly.  
+								</p>
+								<p>
+								The IAEA’s Mission Statement is the following:
+								<br/><br/>
+								<i>
+								"The International Atomic Energy Agency: 
+								<br/><br/>
+									- is an independent intergovernmental, science and technology-based organization, in the United Nations family, that serves as the global focal point for nuclear cooperation; 
+									<br/>
+									- assists its Member States, in the context of social and economic goals, in planning for and using nuclear science and technology for various peaceful purposes, including the generation of electricity, and facilitates the transfer of such technology and knowledge in a sustainable manner to developing Member States; 
+									<br/>
+									- develops nuclear safety standards and, based on these standards, promotes the achievement and maintenance of high levels of safety in applications of nuclear energy, as well as the protection of human health and the environment against ionizing radiation; 
+									<br/>
+									- verifies through its inspection system that States comply with their commitments, under the Non-Proliferation Treaty and other non-proliferation agreements, to use nuclear material and facilities only for peaceful purposes."
+									<br/><br/>
+									(The International Atomic Agency) 
+								</i>
+								</p>
+								<p>
+								The topics that we will be tackling in the committee is the following:<br/>
+								<b>Topic A: Addressing the Threat of Nuclear Terrorism</b><br/>
+								<b>Topic B: Nuclear Energy as an Alternate Source of Energy</b><br/>
+								<b>Topic C: Measures to Implement and Enforce the Nuclear Program in Iran</b>
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/IAEA1.jpg' %}" alt="Ginny Tan" class="img-responsive"></div>
+										<h3 class="name">Ginny Tan</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/IAEA2.jpg' %}" alt="Will Cleveland" class="img-responsive"></div>
+										<h3 class="name">Will Cleveland</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/IAEA3.jpg' %}" alt="Michelle Jiyun Ha" class="img-responsive"></div>
+										<h3 class="name">Michelle Jiyun Ha</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/IAEA4.jpg' %}" alt="Saad" class="img-responsive"></div>
+										<h3 class="name">Saad Shahid</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Czechoslovakia 1990</h2>
+							</div>
+							<div class="modal-body">
+
+
+<center><a href="{% static 'BG/Czech.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">In 1990 a wave of change was spreading throughout the world – the fall of communism. Leaders across the world were suddenly faced with the largest change in world order since the Second World War. Delegates in the Czechoslovakia 1990 committee will face this challenge head on, leading the country through the Velvet Revolution; out of communism and into a brave new world. Furthermore, divisions are forming between the Slovaks and Czechs - who have been unified since 1918. Delegates will have the chance to discuss these issues – and many more – as they take the helm of a fractured country. In this time of upheaval anything can happen. 
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures/Czech3.jpg' %}" alt="Malina" class="img-responsive"></div>
+										<h3 class="name">Malina Gilka</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/CzechNew.jpg' %}" alt="Andy" class="img-responsive"></div>
+										<h3 class="name">Stevan Tempesta Jr.</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Czech1.jpg' %}" alt="Andy" class="img-responsive"></div>
+										<h3 class="name">Andy Marrocco</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/Czech2.jpg' %}" alt="Amylea" class="img-responsive"></div>
+										<h3 class="name">Amylea Doiron</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">United Nations Office for Outer Space Affairs (UNOOSA) and International Civil Aviation Organization (ICAO) Joint Session Committee</h2>
+							</div>
+							<div class="modal-body">
+
+<center><a href="{% static 'BG/unoosa.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;"> Aiming to enhance the delegate experience by holding committee sessions in the ICAO’s Montreal Headquarters, SSUNS 2016 presents the United Nations Office for Outer Space Affairs (UNOOSA) and International Civil Aviation Organization (ICAO) Joint Session Committee. The ICAO was established in 1947 while the UNOOSA has existed in its current format since 1992 as an office in the UN Secretariat. This year’s committee will consist of captivating debates surrounding topics such as commercial space flight, space militarization, and the environmental implications of human activity in space. A strong background in international aviation and space policy will be vital, as this committee challenges the delegates to creatively push international policies and perspectives to new frontiers in space activity. 
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 235px"><img src="{% static 'parallax/Pictures_temp/ICAO1.jpg' %}" alt="Nicholas" class="img-responsive"></div>
+										<h3 class="name">Nicholas d'Ascanio</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/ICAO4.jpg' %}" alt="Samer" class="img-responsive"></div>
+										<h3 class="name">Samer Salameh</h3>
+										<p class="text-alt"><small>Co-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/ICAO2.jpg' %}" alt="Jacklyn" class="img-responsive"></div>
+										<h3 class="name">Jacklyn Chan</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/ICAO3.jpg' %}" alt="Julia" class="img-responsive"></div>
+										<h3 class="name">Julia Yingling</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/ICAO5.jpg' %}" alt="Hena" class="img-responsive"></div>
+										<h3 class="name">Hena Guha</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 300px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Venezuelan National Assembly</h2>
+							</div>
+							<div class="modal-body">
+
+<center><a href="{% static 'BG/Venezuela.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">Delegates will represent members of the Venezuelan National Assembly that were voted in on the elections of December 6, 2015. As the members of the highest legislative power in the country, they will be tasked with dealing with the economic and social issues that currently trouble Venezuelan society. Delegates will draft legislative solutions to these issues and discuss their implications. Although the elections marked a clear victory for the opposition in the country, the pro-Maduro side will play a key role in the debate, as members of the assembly will have to set an example of openness and democracy to pave a way for the end of political polarization in Venezuela. 
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Ven1.jpg' %}" alt="Jorge Luis" class="img-responsive"></div>
+										<h3 class="name">Jorge Luis Flores</h3>
+										<p class="text-alt"><small>Co-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures/Ven2.jpg' %}" alt="Michelle" class="img-responsive"></div>
+										<h3 class="name">Michelle Montilla</h3>
+										<p class="text-alt"><small>Co-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/Ven3.jpg' %}" alt="Isabel" class="img-responsive"></div>
+										<h3 class="name">Isabel Albee</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 500px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">National Football League 2016</h2>
+							</div>
+							<div class="modal-body">
+
+<center><a href="{% static 'BG/NFL.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">  The National Football League will be a hard-hitting committee aimed at tackling the game’s largest issues. Delegates are expected to be challenged through the discussion of various topics, such as league expansion, rule changes, and social problems in the NFL. The committee will bring delegates out of the red zone and key play calls will need to be made past the two-minute warning to ensure your team comes out on top.  
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/NFL1.png' %}" alt="Jonathan Glustein" class="img-responsive"></div>
+										<h3 class="name">Jonathan Glustein</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/NFL2.png' %}" alt="Daniel Cohen" class="img-responsive"></div>
+										<h3 class="name">Daniel Cohen</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/NFL3.png' %}" alt="Joseph Kates Rose" class="img-responsive"></div>
+										<h3 class="name">Joseph Kates Rose</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 300px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">Microsoft Board of Directors</h2>
+							</div>
+							<div class="modal-body">
+
+<center><a href="{% static 'BG/Microsoft.pdf' %}" class="btn btn-lg">Background Guides</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The Microsoft Board of Directors committee hands delegates the reins of one of the world’s largest companies – one that invented the modern personal computer. Times have changed however, and the company does not dominate like it once did. It is faced with an unfamiliar world – dominated by iOS and Android devices, one in which Windows does not reign supreme. Delegates will be confronted with this brave new world and be forced to deal with it head-on, focusing on the company’s market positioning, managing its mobile division and integrating its landmark Linkedin acquisition. This committee will stretch delegates’ understanding of Model United Nations – and will look for bold, new creative thinking to make sure the Next Big Thing comes from Microsoft.
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/BOD1.png' %}" alt="Eileen" class="img-responsive"></div>
+										<h3 class="name">Eileen Siow</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/BOD2.jpg' %}" alt="Nick" class="img-responsive"></div>
+										<h3 class="name">Nick Nasirpour</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/BOD3.png' %}" alt="Niketan" class="img-responsive"></div>
+										<h3 class="name">Niketan Valapakam</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 399px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										<!-- <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

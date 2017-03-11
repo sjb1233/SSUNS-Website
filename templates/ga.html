@@ -1,0 +1,617 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016 - General Assemblies</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" type='images/x-icon' href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" /> -->
+	<link rel="stylesheet" href="{% static 'parallax/style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'parallax/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+
+<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">General Assemblies</h5>
+		</div>
+	</section>
+
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="portfolio" class="portfolio portfolio-parallax clearfix">
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/AU.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal">African Union</a></h3>
+							<span><font size="5">General Assembly</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+					
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/GA.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal2">United Nations General Assembly</a></h3>
+							<span><font size="5"> Special Session on Indigenous Affairs</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/COP.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal3">United Nations</a></h3>
+							<span><font size="5">Framework on Climate Change </font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+										<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/CSW.png' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal4">Economic and Social Council</a></h3>
+							<span><font size="5">Commission on the Status of Women</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures/UNESCAP.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal5">United Nations</a></h3>
+							<span><font size="5">Economic and Social Commission for Asia and the Pacific</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/UNESCO.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal6">United Nations</a></h3>
+							<span><font size="5">Educational, Scientific and Cultural Organization</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+					<article class="portfolio-item pf-media pf-icons">
+						<div class="portfolio-image" style="background-image: url({% static 'parallax/Pictures_temp/WHO.jpg' %});" data-stellar-background-ratio="0.5"><div class="portfolio-overlay"></div></div>
+						<div class="portfolio-desc">
+							<h3><a href="#" data-toggle="modal" data-target="#myModal7">United Nations</a></h3>
+							<span><font size="5">World Health Organization</font></span>
+							<div class="portfolio-divider"><div></div></div>
+						</div>
+					</article>
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+<!-- MODALS -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">African Union</h2>
+							</div>
+							<div class="modal-body">
+							
+							
+							<center><a href="{% static 'BG/AUFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+							
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">For fifteen years since its foundation in 2001, the African Union has served as one of the most influential and poignant regional bodies directly affecting African countries and to a much larger extent, the world. Consisting of 54 countries, the AU boasts a plethora of economies, political systems and cultures. The African Union’s mandate ranges from combatting HIV/AIDS to conflict resolution with the ultimate goal of promoting African relations and prosperity. The AU officially recognized 8 sub-regional bodies catering to the specific needs of regions within Africa.  
+								</p>
+								<p style="text-indent: 50px;">
+								Our committee will cover the political, economic and developmental matters that surround the AU’s most current agenda. The lack of transparency and integrity ofcertain political systems within African nations have ironically been far from secret to the international community. As of one of the most important issues surrounding African politics at the moment, delegates will need to strongly evaluate the values each of their nations hosts when navigating this topic. Foreign Direct Investment has been incredibly pertinent to Africa for a while now since the commodity boom in the 2000’s. With economic powers, such as China, looking to exponentially increase their involvement within Africa to exploit the host of resources, nations must carefully navigate this seemingly limitless economic opportunity with what benefits local businesses and local economic growth. Bolstering access to education within African nations has been a highly publicized affair but must nevertheless not be taken lightly. To offer children education is to offer them with the basic tools and opportunity necessary to live a prosperous life, at its core the right to education should be seen as a human right. However, much easier said than achieved, delegates must immerse themselves within their country’s best interests and foster an education system that may work best for the population. Looking beyond the frame of Western education is crucial for finding effective solutions to this issue.  
+								</p>
+								<p style="text-indent: 50px;">
+								The African Union is a body with incredible potential. Plagued by bureaucracy and corruption, delegates have the chance to transform the African Union into a powerful regional body, ultimately allowing Africa to prosper in a world where it has long been neglected.  </p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/AU2.jpg' %}" alt="Iman Lahouaoula" class="img-responsive"></div>
+										<h3 class="name">Iman Lahouaoula</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/AU1.jpg' %}" alt="Christoph Buhne" class="img-responsive"></div>
+										<h3 class="name">Christoph Buhne</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/AU3.jpg' %}" alt="Jonathan Lopez" class="img-responsive"></div>
+										<h3 class="name">Jonathan Lopez</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/AU4.jpg' %}" alt="Michelle Rugamba" class="img-responsive"></div>
+										<h3 class="name">Michelle Rugamba</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">United Nations General Assembly Special Session on Indigenous Affairs</h2>
+							</div>
+							<div class="modal-body">
+							<center><a href="{% static 'BG/UNGAFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">The UNGA Special Session on Indigenous Affairs Committee has been called to order this year at SSUNS 2016 to address the global issue of the mistreatment and underrepresentation of indigenous peoples across the globe. It is time that the global community turns their attention to reconciling these matters and treating indigenous people with respect and support. From within the hall of the General Assembly, all the nations of the world will gather to discuss and solve some of the most important indigenous issues of the modern era. With significant global and environmental factors playing a role, it will be a challenging yet rewarding process. Topics will vary from the displacement of indigenous peoples due to both environmental and political factors, to health systems, particularly involving mental health, to the overall poverty and underdevelopment experienced by indigenous peoples. These topics are crucial to the support and restoration of indigenous populations, and if unaddressed will lead to further injustice against these significant cultural groups.
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 290px"><img src="{% static 'parallax/Pictures_temp/UNGA2.jpg' %}" alt="Geoff Nicholson" class="img-responsive"></div>
+										<h3 class="name">Geoff Nicholson</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNGA1.jpg' %}" alt="Emma McInerney" class="img-responsive"></div>
+										<h3 class="name">Emma McInerney</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNGA3.jpg' %}" alt="Morgane Juliat" class="img-responsive"></div>
+										<h3 class="name">Morgane Juliat</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNGA4.jpg' %}" alt="Patrick Bouke O'Donnell" class="img-responsive"></div>
+										<h3 class="name">Patrick Bouke O'Donnell</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">United Nations Framework on Climate Change:  COP 22</h2>
+							</div>
+							<div class="modal-body">
+								
+								<center><a href="{% static 'BG/COP22FinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+
+								<p style="text-indent: 50px;">The international political response to climate change began with the adoption of the UN Framework on Climate Change (UNFCCC), which came into force March 1994. This convention set out a framework for action aimed at stabilizing atmospheric concentrations of greenhouse gases and forming coherent frameworks to deal with climate change on a global political stage. The Conference of Parties (COP) has overseen the adoption of the Kyoto Protocol, Montreal Action Plan and now, most recently, the Paris Agreements at the COP 21 2015 Paris Climate Conference. COP 21 saw the adoption of the very first universal and legally binding global climate deal by 195 countries. The 22nd session of the Conference of the Parties (COP 22) to the UNFCCC is to take place in Marrakesh, Morocco. This year, SSUNS 2016 will be simulating COP 22 and looking into important questions of: the ratification and enforcement of the Paris Agreements and additional strategies for the reduction of greenhouse gas emission, the impact of climate change on human health and, the status of climate change refugees.
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 300px"><img src="{% static 'parallax/Pictures_temp/COP4.jpg' %}" alt="Manon Rouanet" class="img-responsive"></div>
+										<h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/COP2.jpg' %}" alt="Jad El Tal" class="img-responsive"></div>
+										<h3 class="name">Jad El Tal</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+						<!--		<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/COP3.jpg' %}" alt="Kieran Sharma" class="img-responsive"></div>
+										<h3 class="name">Kieran Sharma</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 425px"><img src="{% static 'parallax/Pictures/whitePlaceHolder.png' %}" alt="" class="img-responsive"></div>
+										 <h3 class="name">Manon Rouanet</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>-->
+
+
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures/COP3.jpg' %}" alt="Kieran Sharma" class="img-responsive"></div>
+										<h3 class="name">Kieran Sharma</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/COP22New.jpg' %}" alt="" class="img-responsive"></div>
+										<h3 class="name">Sinead Camps</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">The Commission on the Status of Women</h2>
+							</div>
+							<div class="modal-body">
+								<center><a href="{% static 'BG/CSWFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+
+
+
+								<p style="text-indent: 50px;">The Commission on the Status of Women (CSW) is the leading intergovernmental and international body committed to the advancement of gender equality and the promotion of women’s empowerment. Convening in annual sessions since 1947, the CSW initially tackled discriminatory legislation, beginning with the unique and then unrecognised issue of referencing all of humanity as "men", and has since forged its way into the global context by discussing every concern that disadvantages the women of the world. The contributions of the CSW cannot be overstated. Their early conventions on the political rights of women, the minimum age for marriage, and the equal economic remuneration for men and women workers for work of equal value paved the way for today’s conversation on women’s rights. With UN Women serving as the Secretariat for the CSW, the commission is now able to not only formulate globally agreed standards for gender equality but also assist member nations to implement these standards and raise the bar for general welfare. At SSUNS 2016, the Commission on the Status of Women will seek to address vital topics concerning gender equality, from its inextricable link to sustainable development to its continued contravention in education and employment. As delegates, your role will be to consider unique perspectives on these matters and innovate the myriad of creative and empathetic solutions that gender inequality demands.  
+								</p>
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 230px"><img src="{% static 'parallax/Pictures_temp/CSW3.jpg' %}" alt="Mahathi Ramesh" class="img-responsive"></div>
+										<h3 class="name">Mahathi Ramesh</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/CSW2.jpg' %}" alt="Fatima Sheikh" class="img-responsive"></div>
+										<h3 class="name">Fatima Sheikh</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Pictures_temp/CSW4.jpg' %}" alt="Samaa Kazerouni" class="img-responsive"></div>
+										<h3 class="name">Samaa Kazerouni</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/CSW1.jpg' %}" alt="Esli Chan" class="img-responsive"></div>
+										<h3 class="name">Esli Chan</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">United Nations Economic and Social Commission for Asia and the Pacific</h2>
+							</div>
+							<div class="modal-body">
+								<center><a href="{% static 'BG/UNESCAPFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+								<h3>Description:</h3>
+
+
+								<p style="text-indent: 50px;">Welcome to the UNESCAP committee at SSUNS 2016! This body was created in 1947 in order to tackle some of the region’s greatest challenges by providing results oriented projects, technical assistance and capacity building to member states. It is committed to a resilient Asia and the Pacific founded on shared prosperity, social equity and sustainability, and we hope that delegates are prepared to share these values. During this four-day conference, we will be discussing three important issues of concern in Asia and the Pacific: sustainable agriculture, human migration, and infrastructure and economic development in South East Asia. All of these matters have a major impact on the people of the Asia-Pacific and are deserving of thoughtful, well-researched and comprehensive resolutions. We hope you are excited and cannot wait to see you in November.
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNES4.png' %}" alt="Winnie" class="img-responsive"></div>
+										<h3 class="name">Winnie</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNES2.jpg' %}" alt="Jamie" class="img-responsive"></div>
+										<h3 class="name">Jamie</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNES3.jpg' %}" alt="Natalie" class="img-responsive"></div>
+										<h3 class="name">Natalie</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNES1.jpg' %}" alt="Sybelle" class="img-responsive"></div>
+										<h3 class="name">Sybelle</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">United Nations Educational, Scientific and Cultural Organization</h2>
+							</div>
+							<div class="modal-body">
+
+								<center><a href="{% static 'BG/UNESCOFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+								
+								<h3>Description:</h3>
+
+
+								<p style="text-indent: 50px;">UNESCO was created in 1945 by a generation highlighted by two world wars. It was based on a firm belief by the founders of the organization that "lasting peace was not to be forged through political and economic agreements, but rather by moral and intellectual solidarity." Today, UNESCO has sought to further establish this founding message and adapt it to the constantly growing and modernizing world. While building intercultural understanding is still at the core of this UN body, our exposure to culture has dramatically increased while the cultures of our globe have dramatically changed. Scientific cooperation has certainly been a main focus for UNESCO, however the nature of science coupled with the pressing need for science has evolved. And while freedom of expression remains an essential condition for democracy, development and human dignity, our means of expression have transformed in the truly interconnected and global world we live in today. Today, delegates in the UNESCO committee will face issues that shape our past, confront dangers that jeopardize our societies, cultures and the world we live in today, as well as develop the necessary infrastructure to ensure that multiculturalism, scientific pursuit and freedom of expression remain cornerstones of our society. 
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper" style="height: 346px"><img src="{% static 'parallax/Photos/UNESCO2.jpg' %}" alt="Dan Ton-That" class="img-responsive"></div>
+										<h3 class="name">Dan Ton-That</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNESCO1.jpg' %}" alt="Catherine Sun" class="img-responsive"></div>
+										<h3 class="name">Catherine Sun</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNESCO3.jpg' %}" alt="Leo Lamanuzzi" class="img-responsive"></div>
+										<h3 class="name">Leo Lamanuzzi</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/UNESCO4.jpg' %}" alt="Yash Nanda" class="img-responsive"></div>
+										<h3 class="name">Yash Nanda</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 1200px;">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h2 class="modal-title" id="myModalLabel">World Health Organization</h2>
+							</div>
+							<div class="modal-body">
+
+							<center><a href="{% static 'BG/WHOFinalDraft.pdf' %}" class="btn btn-lg">Background Guide</a></center>
+
+								<h3>Description:</h3>
+								<p style="text-indent: 50px;">“Humanity has but three great enemies: fever, famine, and war; of these by far the greatest, by far the most terrible, is fever.”   
+
+								<br><i>Sir William Osler  (Founder, Johns Hopkins School of Medicine, MDCM (McGill University, 1872) </i> 
+								</p>
+								<p style="text-indent: 50px;">
+								SSUNS brings you its World Health Organization committee at an especially exciting time for global health. From epidemic control to public health law, WHO statements are being quoted widely in front page articles and are guiding health legislation around the world. We’ve made huge strides in mitigating morbidity and death, but as Osler mentioned, the challenges of disease and ill health are not backing down. It will take hard work, creativity and – above all –cooperation to really make change in a field that’s as borderless as it gets.  
+								</p>
+								<p style="text-indent: 50px;">
+								Our topics this year tackle diverse issues at the forefront of public health in 2016. We’re looking forward to involving every country in discussion and making decisions that would have important, global implications in moving towards a healthier world.
+								</p>
+
+								<br/><br/>
+								<h3>Dais Members:</h3>
+								<br/>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/WHO4.jpg' %}" alt="Koray Demir" class="img-responsive"></div>
+										<h3 class="name">Koray Demir</h3>
+										<p class="text-alt"><small>Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/WHO3.jpg' %}" alt="Emily Xing" class="img-responsive"></div>
+										<h3 class="name">Emily Xing</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/WHO1.jpg' %}" alt="Anastasia Rewers-Kusiak" class="img-responsive"></div>
+										<h3 class="name">Anastasia Rewers-Kusiak</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="speaker">
+										<div class="photo-wrapper"><img src="{% static 'parallax/Photos/WHO2.jpg' %}" alt="Emily Rea" class="img-responsive"></div>
+										<h3 class="name">Emily Rea</h3>
+										<p class="text-alt"><small>Vice-Chair</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

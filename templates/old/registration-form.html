@@ -1,0 +1,182 @@
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>
+SSUNS 2016 - Registration Form</title>
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- Google Font Raleway -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700,300' rel='stylesheet' type='text/css'>
+<!-- Font Awsome Icons CSS -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<!-- Custom CSS -->
+<!-- <link href="css/custom.css" rel="stylesheet"> -->
+<link href="{% static 'css/custom.css' %}" rel="stylesheet">
+<!-- Colors and Backgrounds CSS -->
+<!-- <link href="css/colors_2.css" rel="stylesheet"> -->
+<link href="{% static 'css/colors_2.css' %}" rel="stylesheet">
+<link href="{% static 'css/calc.css' %}" rel="stylesheet">
+</head>
+<body>
+<div id="preloader">
+  <div class="pre_container">
+    <div class="loader">
+    </div>
+  </div>
+</div>
+<!-- Fixed navbar -->
+<nav class="navbar nav_mask_full">
+<div class="navi_container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">
+    Toggle navigation </span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+    <span class="icon-bar">
+    </span>
+    </button>
+    <a class="navbar-brand" href="/">
+    SSUNS 2016 </a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li>
+      <a href="/about/">
+      About </a>
+      </li>
+      <li>
+      <a href="/team/">
+      Team </a>
+      </li>
+      <li>
+      <a href="/reg/">
+      Registration and Travel Info </a>
+      </li>
+      <li>
+      <a href="/committees/">
+      Committees</a>
+      </li>
+      <li>
+      <a href="/contact/">
+      Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <!--/.nav-collapse -->
+</div>
+<!--/.nav-collapse -->
+</nav>
+<div class="gap">
+</div>
+
+<div class="title_center">
+  <p class="wow fadeInDown">
+<!-- </p> -->
+     Registration Form
+</div>
+  </p>
+</div>
+<div class="center_line">
+</div>
+<div class="container">
+<div class="newPara"> 
+  <p style="margin-left:4.5em; margin-right:4.5em;">
+    <font size="3">
+    Thank you for your interest and trust in SSUNS 2016. If you have any questions or concerns while filling out the registration application form, you can contact our Chargee D'Affaires Koray Demir at schools@ssuns.org. Similarly, please note that you only need to fill out this application once and that if any of the information changes after registration, simply inform Koray Demir at schools@ssuns.org. After you register and click submit, you will receive a confirmation email at the email address that you have provided.
+    </font>
+  </p>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <br>
+    <h1>School Details</h1>
+    <!-- Cognito-Form: SSUNS 2015; SSUNS 2016 implements the form via Django -->
+    <form method='POST' action=''>{% csrf_token %}
+      {{ form|crispy }}
+      <!-- <p> The number of delegates = {{ NumberDels }}</p> -->
+      <!-- <p>Total: </p> <input id="result" onchange="calculate()"/> -->
+     <!--  <div id="calculator">
+  <div class="top">
+    <span class="clear">C</span>
+    <div class="screen"></div>
+  </div>
+  
+  <div class="keys">
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>0</span>
+    <span class="eval">=</span>
+  </div>
+</div> -->
+<br>
+<br>
+      <input class='btn btn-primary btn-lg' type='submit' value='Register' />
+    </form>
+    </div>
+</div>
+</div>
+<!-- <div class="first_description">
+  <div class="cognito">
+<script src="https://services.cognitoforms.com/include/required"></script>
+<script src="https://services.cognitoforms.com/session/script/5e9be02b-554b-436a-8bfa-764ed2c4a05e"></script>
+<script>Cognito.load("forms", { id: "1" });</script>
+</div>
+</div> -->
+<div class="mini_gap">
+</div> 
+
+
+
+<footer>
+    <div class="footer">
+      <a href="https://www.facebook.com/officialssuns" class="contact_icon fa fa-facebook">
+      </a>
+      <a href="https://twitter.com/ssuns_official" class="contact_icon fa fa-twitter">
+      </a>
+      <a href="https://ca.linkedin.com/company/international-relations-students%27-association-of-mcgill-inc-" class="contact_icon fa fa-linkedin">
+      </a>
+      <a href="https://instagram.com/ssuns_official/" class="contact_icon fa fa-instagram">
+      </a>
+      <p class="copyright"><span>&copy;</span>Copyright SSUNS <span>2016</span>Design by USG-IT</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript">
+window.onload = function(NumDels)
+{
+     document.getElementById("form").onchange = function(NumDels)
+     {
+         
+     };
+};
+</script>
+
+
+
+<script type="text/javascript" src="{% static 'js/jquery-2.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/minify.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/calc.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016 - Travel</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+
+
+							<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>
+						</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section align-center">
+		<div class="container" style="height:20px">
+			<h5 class="heading-alt">Travel Partnerships</h5>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="tabs-wrapper tabs-horizontal">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">
+						<h3 class="h3">WestJet</h3>
+						<p class="text-alt">Flight Partnership</p>
+					</a></li>
+					<li><a href="#tab2" data-toggle="tab">
+						<h3 class="h3">VIA Rail</h3>
+						<p class="text-alt">Train Partnership</p>
+					</a></li>
+					<li><a href="#tab4" data-toggle="tab">
+						<h3 class="h3">Hotel Bonaventure</h3>
+						<p class="text-alt">Premier Conference Facilities</p>
+					</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="tab1" class="tab-pane fade active in">
+						<article class="col-sm-8">
+							<h4>WestJet Instructions</h4> <br>
+					<p> <b><u>Visit the dashboard for the Promo code </u></b> </p>
+							<p> <b>Book by:</b> November 20, 2016</p>
+							<p> <b>Travel from:</b> November 3 – 20, 2016</p>
+							<p><b>Blackout dates:</b> November 10 – 15, 2016</p>
+							<p> <b>Changes/Cancellation:</b> "You can change or cancel reservations within 24 hours of booking at no charge. Further changes or cancellations can be made up to 2 hours prior to the flight; please note additional fees or charges may apply for each guest depending on fare class booked and differences in fare. Check out our service fees page for more information."
+							</p>
+
+						</article>
+						<div class="col-sm-4">
+							<br/><br/><br/><br/>
+							<img src="{% static 'assets/img/westjet.jpg' %}" alt="" class="img-responsive" />
+						</div>
+					</div>
+
+					<div id="tab2" class="tab-pane fade">
+						<article class="col-sm-8">
+							<h4>VIA Rail Instructions</h4> <br>
+						<p> <b><u>Visit the dashboard for the Promo code </u></b> </p>
+	
+
+
+						<p> <b>Information:</b> <br/>
+							"You have to log in to your profile, or create one prior to booking. On the Passenger information screen, select 'Convention fare' from the 'Discount Type' drop-down menu, and enter the discount code for your convention or event in the 'Discount code' field. This code has been given to you by the conference organizer. The conference fare will be shown on the next page."</p>
+							<p> <b>Valid:</b> November 4th, 2016 to November 15th, 2016</p>
+							<p> <b>Territory:</b> From all stations throughout the VIA system to <u>Montreal, Quebec</u> and return.</p>
+							<p><b>Restrictions:</b> <br/>Fare applies to a maximum of two passengers per booking.
+							<br/>One complimentary stopover is allowed at no additional charge.
+							<br/>For travel on all fare plans in Business class, the first stopover is allowed at no additional charge, provided that this stopover takes place in Toronto, Montréal or Ottawa only.</p>
+							<p><b>Discount:</b> 10% off the best available fare in Economy, Economy Plus, Business, Business Plus, Sleeper class. "Subject to the conditions and restrictions
+							of the fare plan to which the additional discount is being applied."</p>
+							<p><b>Exception:</b> Discount does not apply in any Escape fares and Prestige Class. </p>
+							<p><b>Identification:</b> Participants must reference the event’s VIA convention discount code available on the dashboard. </p>
+
+						</article>
+						<div class="col-sm-4" style="position:relative; top:50px;">
+							<img src="{% static 'assets/img/via.png' %}" alt="" class="img-responsive" />
+						</div>
+					</div>
+
+
+                                        <div id="tab4" class="tab-pane fade">
+                                                <article class="col-sm-7">
+                                                        <h3>Premier Conference Facilities</h3> <br>
+                                                        <p>Hotel Bonaventure Montreal is located in the heart of downtown Montreal with excellent conference facilities, views and vacation packages.</p>
+                                        <p><h5><br/>Hotel contact information:</h5><br/>
+
+Hotel contact : <b>Lise Desgroseilliers</b><br/>
+
+Hôtel Bonaventure Montréal <br/>
+900, de La Gauchetière West Street <br/>
+Montréal, Québec H5A 1E4 <br/>
+Direct : 514-878-2993 -- Toll free : 800-267-2575 <br/>
+Email : ldesgroseilliers@hotelbonaventure.com <br/>
+<a href="http://www.hotelbonaventure.com">www.hotelbonaventure.com</a>&nbsp;&nbsp;<a href="{% static 'assets/RESERVATIONSSSUNS2016.xlsx' %}" target="_blank"> Download Reservation Form </a>
+<br/>
+<img src="{% static 'assets/img/hotel_price.png' %}" alt="" />
+</p>
+
+                                                </article>
+                                                <div class="col-sm-5">
+                                                        <img src="{% static 'assets/img/a4.png' %}" alt="" class="img-responsive" />
+
+
+                                                </div>
+                                        </div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>

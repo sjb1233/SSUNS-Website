@@ -1,0 +1,278 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SSUNS 2016</title>
+
+	<meta name="description" content="SSUNS 2016">
+	<meta name="keywords" content="modelUN, unitednations, mcgill">
+	<meta name="author" content="Patrick Baral">
+
+	<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.jpg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/apple-touch-icon-72x72.jpg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/apple-touch-icon-114x114.jpg' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom-animations.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style-blue-color.css' %}" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+
+	<section id="hero" class="hero-section bg1 bg-cover window-height light-text">
+		<ul class="socials-nav">
+			<li class="socials-nav-item"><a href="https://twitter.com/ssuns_official"><span class="fa fa-twitter"></span></a></li>
+			<li class="socials-nav-item"><a href="https://www.facebook.com/officialssuns"><span class="fa fa-facebook"></span></a></li>
+			<li class="socials-nav-item"><a href="https://ca.linkedin.com/company/international-relations-students%27-association-of-mcgill-inc-"><span class="fa fa-linkedin"></span></a></li>
+			<li class="socials-nav-item"><a href="https://instagram.com/ssuns_official/"><span class="fa fa-instagram"></span></a></li>
+		</ul>
+		<div class="heading-block centered-block align-center">
+			<div class="container">
+				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>November 10-13 <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Montreal, QC</h5>
+				<h1 class="extra-heading">SSUNS 2016</h1>
+				<h6 class="thin base-font">Secondary Schools' <strong>United Nations</strong> Symposium</h6>
+				<div class="btns-container">
+					<a href="/reg/" class="btn btn-md">Registration</a>
+					<a href="/accounts/register/" class="btn btn-outline btn-md">Sign Up for Dashboard</a>
+					<a href="/accounts/login/" class="btn btn-outline btn-md">Login to Dashboard</a>	
+				<br/><br/>
+					<a href="/schedule/" class="btn btn-outline btn-md">Schedule 2016</a>
+					<a href="{% static 'assets/rules.pdf' %}" target="_blank" class="btn btn-outline btn-md">Rules and Procedures</a>		
+</div>
+			</div>
+		</div>
+	</section>
+
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="/" class="logo">
+						<img src="{% static 'assets/img/ventcamp_logo.png' %}" alt="VentCamp" class="retina-hide">
+						<img src="{% static 'assets/img/ventcamp_logo@2x.png' %}" alt="VentCamp" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+						<!--	<li class="navigation-item"><a href="/about/" class="navigation-link">About</a></li>
+							-->
+
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">About</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="/about/" class="navigation-link">Our Conference</a></li>
+									<li class="navigation-item"><a href="/schedule/" class="navigation-link">Schedule</a></li>
+								</ul>
+							</li>
+
+
+
+
+							<li class="navigation-item"><a href="/team/" class="navigation-link">Our Team</a></li>
+							
+
+
+								<li class="navigation-item dropdown">
+									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Committees</a>
+									<ul class="dropdown-menu">
+										<li class="navigation-item"><a href="/ga/" class="navigation-link">General Assemblies</a></li>
+										<li class="navigation-item"><a href="/sa/" class="navigation-link">Specialised Agencies</a></li>
+										<li class="navigation-item"><a href="/crisis/" class="navigation-link">Crisis Committees</a></li>
+									</ul>
+								</li>
+
+
+<li class="navigation-item"><a href="/travel/" class="navigation-link">Travel</a></li>
+							<li class="navigation-item"><a href="/contact/" class="navigation-link">Contact Us</a></li>
+							<li class="navigation-item"><a href="/faq/" class="navigation-link">FAQ</a></li>	
+					</ul>
+
+						<a href="/reg/" class="pull-right buy-btn">Registration</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<section class="footer">
+		<div class="container">
+
+<!--			<div class="col-md-4">
+				<div class="widget about-widget">
+					<h6 class="widget-head">Message from the <span class="highlight">Secretary-General</span></h6>
+					<p class="text-alt"><small>Dear Delegates and Faculty Advisors, </br></br>  It is my great pleasure to invite you to the 24th iteration of the Secondary Schools' United Nations Symposium. </br> SSUNS has a long history of being Canada's premier high school Model UN conference, and it stands in part as a testament to the hard work and dedication of everyone involved. This year, we're working hard to put on a conference on par with the excellence shown by the staff and delegates who participate. </br> </br> My Secretariat and I are looking forward to welcoming you to Montréal this November. See you soon!</small></p>
+
+					<img src="{% static 'assets/img/autograph-143x105.png' %}" alt="autograph">
+				</div>
+			</div>
+
+			<div class="col-md-4 col-lg-3 col-lg-offset-1">
+				<div class="widget twitter-widget">
+					<h6 class="widget-head"><span class="fa fa-twitter"></span> Twitter Feed</h6>
+
+					<ul class="tweets-list">
+						<li class="tweet">
+							<p class="text-alt tweet-text">Refer to the Registration page for updated info on the refund policy! </p>
+							<small class="tweet-date">26 May 2016</small>
+						</li>
+						<li class="tweet">
+							<p class="text-alt tweet-text">Refer to the about page for updated info about the hotel and conference! </p>
+							<small class="tweet-date">26 May 2016</small>
+						</li>
+						<li class="tweet">
+							<p class="text-alt tweet-text">Check out the awesome new committees! </p>
+							<small class="tweet-date">4 april 2016</small>
+						</li>
+
+						<li class="tweet">
+							<p class="text-alt tweet-text">Registration opens May 12th</p>
+							<small class="tweet-date">3 april 2016</small>
+						</li>
+
+						<li class="tweet">
+							<p class="text-alt tweet-text">Can't wait for SSUNS 2016!</p>
+							<small class="tweet-date">2 april 2016</small>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-lg-3 col-lg-offset-1">
+				<div class="widget instagram-widget">
+					<h6 class="widget-head"><span class="fa fa-instagram"></span> Photo feed</h6>
+
+					<ul class="instagram-list">
+						<li><img src="{% static 'assets/gallery/delegates.jpeg' %}" alt="photo"/></li>
+						<li><img src="{% static 'assets/gallery/img.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/irsam.png' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/oc.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/ss.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/ssuns.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/lf.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/photo.jpeg' %}" alt="photo" /></li>
+						<li><img src="{% static 'assets/gallery/group.jpeg' %}" alt="photo" /></li>
+					</ul>
+				</div>
+			</div>
+-->
+<center>
+<p style="font-size: 25px">
+<a href="https://www.facebook.com/officialssuns/"> Click here for the SSUNS Live Feed channel</a>
+</p>
+</center>
+		<br/><br/>	<br/><br/>
+
+
+
+			<div class="col-md-12">
+				<div class="widget about-widget">
+					<center><h6 class="widget-head">Our<span class="highlight"> Sponsors</span></h6></center>
+					<div class="col-md-4"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/MUNInstitute.jpg' %}" alt="MUN Institute">
+					</center></div>
+					<div class="col-md-4" style="top: 20px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/shad.jpg' %}" alt="SHAD">
+					</center></div>
+					<div class="col-md-4" style="top: 25px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/mount.png' %}" alt="Mount Allison">
+					</center></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="widget about-widget">
+					<div class="col-md-4" style="top: 25px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/Sask.png' %}" alt="Bishop">
+					</center></div>
+					<div class="col-md-4" style="top: 25px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/bishop.png' %}" alt="Bishop">
+					</center></div>
+					<div class="col-md-4" style="top: 25px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/huron.jpg' %}" alt="Mount Allison">
+					</center></div>
+				</div>
+			</div>
+<div class="col-md-12">
+				<div class="widget about-widget">
+					<div class="col-md-6" style="top: 25px"><center>
+					<img style="width:75%; height:75%" src="{% static 'assets/img/wrap.png' %}" alt="Bishop">
+					</center></div>
+					<div class="col-md-6" style="top: 25px"><center>
+					<img style="width:40%; height:40%" src="{% static 'assets/img/copper.png' %}" alt="Bishop">
+					</center></div>
+				</div>
+			</div>
+		</div>
+<br/><br/><br/><br/>	
+		<div class="footer-base">
+			<div class="container">
+
+				<div class="col-md-6">
+					<ul class="footer-nav">
+				<!---	<li class="footer-nav-item"><a href="/form/">Contact</a></li> -->
+						<!-- <li class="footer-nav-item"><a href="#">Privacy Policy</a></li> -->
+					</ul>
+				</div>
+
+				<div class="col-md-6 align-right">
+					<ul class="socials-nav align-right">
+						<li class="socials-nav-item"><a href="https://twitter.com/ssuns_official"><span class="fa fa-twitter"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.facebook.com/officialssuns"><span class="fa fa-facebook"></span></a></li>
+						<li class="socials-nav-item"><a href="https://ca.linkedin.com/company/international-relations-students%27-association-of-mcgill-inc-"><span class="fa fa-linkedin"></span></a></li>
+						<li class="socials-nav-item"><a href="https://instagram.com/ssuns_official/"><span class="fa fa-instagram"></span></a></li>
+					</ul>
+
+					<p class="text-alt"><small>All Rights Reserved © 2016. Website design by USG-IT and SG</small></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<div id="modal" class="modal fade" role="dialog" data-modal="0" style="background-color: rgba(2, 2, 2, 0.85); margin-top: 3.5em;">
+		<div class="modal-box iframe-box iframe-video">
+			<a class="close-btn icon icon-office-52" href="/"></a>
+			<iframe src="https://www.youtube.com/embed/KnNsfL8Tn9A" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="{% static 'assets/js/jquery-2.1.4.min.js' %}"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/toastr.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.plugin.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/ventcamp.js' %}"></script>
+</body>
+</html>
+
